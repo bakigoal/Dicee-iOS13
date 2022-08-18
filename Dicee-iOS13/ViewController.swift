@@ -7,12 +7,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-        diceImageView1.alpha = 0.5
+        diceImageView1.image = #imageLiteral(resourceName: "DiceThree")
         diceImageView2.image = #imageLiteral(resourceName: "DiceFive")
     }
 
-
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        diceImageView2.image = #imageLiteral(resourceName: "DiceSix")
+    }
+    
 }
 
