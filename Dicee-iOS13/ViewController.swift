@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         diceImageView2.image = images[rightDiceNumber]
         
         leftDiceNumber = (leftDiceNumber + 1) % images.count
-        rightDiceNumber = (rightDiceNumber + 5) % images.count
+        rightDiceNumber = rightDiceNumber > 0 ? rightDiceNumber - 1 : images.count - 1
     }
     
 }
