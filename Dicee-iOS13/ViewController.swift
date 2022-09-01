@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         diceImageView1.image = images[leftDiceNumber]
         diceImageView2.image = images[rightDiceNumber]
         
-        leftDiceNumber = (leftDiceNumber + 1) % images.count
-        rightDiceNumber = rightDiceNumber > 0 ? rightDiceNumber - 1 : images.count - 1
+        leftDiceNumber = Int.random(in: 0...5)
+        rightDiceNumber = Int.random(in: 0...5)
     }
     
 }
